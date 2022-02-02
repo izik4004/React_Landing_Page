@@ -30,3 +30,7 @@ Route::get('schools/{id}', [App\Http\Controllers\SchoolsController::class, 'show
 // Auth::routes();
 
 
+Route::get('/form', function()
+{
+    return View('school-form');
+});

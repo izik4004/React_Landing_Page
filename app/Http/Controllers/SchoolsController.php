@@ -16,7 +16,7 @@ class SchoolsController extends Controller
     
     public function show(School $id)
     {
-        return view('schools.show', ['game' => $id]);
+        return view('schools.show', ['school' => $id]);
     }
     
     public function create()
