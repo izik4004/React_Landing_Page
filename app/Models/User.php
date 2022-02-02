@@ -21,6 +21,21 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'gender',
+        'date_of_birth',
+        'id_no',
+        'roll',
+        'blood_group',
+        'religion',
+        'email',
+        'class',
+        'section',
+        'address',
+        'admission_id',
+        'phone',
+        'bio',
+        'media_id',
+        'role'
     ];
 
     /**
@@ -41,4 +56,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function media()
+    {
+        return $this->hasOne('App\Models\Media');
+    }
 }

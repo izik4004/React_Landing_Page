@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileRequest;
-use App\Models\School;
 use Illuminate\Http\Request;
+use App\Traits\StoreUser;
 
 class SchoolController extends Controller
 {
+    use StoreUser;
+
+    protected $role = 'admin';
+
     /**
      * Display a listing of the resource.
      *
@@ -26,21 +29,6 @@ class SchoolController extends Controller
     public function create()
     {
         return view('schools.school-form');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(ProfileRequest $request)
-    {
-        $request = $request->validated();
-
-        School::create($request);
-
-        return back()->with('School added');
     }
 
     /**

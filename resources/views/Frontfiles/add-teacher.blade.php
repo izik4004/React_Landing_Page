@@ -455,7 +455,9 @@
                                 </div>
                             </div>
                         </div>
-                        <form class="new-added-form" method="POST" action="{{ route('teachers.store') }}">
+                        <form class="new-added-form" method="POST" action="{{ route('teachers.store') }}" enctype="multipart/form-data">
+                            @include('inc.session-errors')
+                            @include('inc.session-status')
                             @csrf
                             <div class="row">
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
