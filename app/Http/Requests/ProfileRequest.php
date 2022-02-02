@@ -34,14 +34,14 @@ class ProfileRequest extends FormRequest
             'id_no' => "$nullable",
             'blood_group' => "$required",
             'religion' => "$required",
-            'email' => 'nullable|email|max:255',
+            'email' => 'required|email|max:255|unique:users',
             'class' => "$required",
             'section' => "$required",
             'address' => "$nullable",
             'admission_id' => "$nullable",
             'phone' => "$nullable",
             'bio' => "$nullable",
-            'photo' => 'nullable|image|max:500'
+            'photo' => 'required|mimes:jpeg,png,jpg,svg'
         ];
     }
 }

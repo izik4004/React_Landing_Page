@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileRequest;
-use App\Models\Teacher;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Traits\StoreUser;
 
 class TeachersController extends Controller
 {
+    use StoreUser;
+
+    protected $role = 'teacher';
+
     /**
      * Display a listing of the resource.
      *
@@ -26,21 +31,6 @@ class TeachersController extends Controller
     public function create()
     {
         return view('Frontfiles.add-teacher');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(ProfileRequest $request)
-    {
-        $request = $request->validated();
-
-        Teacher::create($request);
-
-        return back()->with('Teacher added');
     }
 
     /**
