@@ -27,6 +27,7 @@ Route::get('schools/create', [App\Http\Controllers\SchoolsController::class, 'cr
 Route::get('schools/{id}', [App\Http\Controllers\SchoolsController::class, 'show'])->name('schools.show');
 
 Route::resource('teachers', 'TeachersController');
+Route::resource('students', 'StudentController');
 
 // Auth::routes();
 
