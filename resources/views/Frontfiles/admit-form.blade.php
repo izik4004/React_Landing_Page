@@ -266,20 +266,24 @@
                             </ul>
                         </li>
                         <li class="nav-item sidebar-nav-item">
-                            <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Schools</span></a>
+                            <a href="#" class="nav-link"><i class="flaticon-classmates"></i><span>Students</span></a>
                             <ul class="nav sub-group-menu sub-group-active">
                                 <li class="nav-item">
-                                    <a href="all-schools.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                                        School</a>
+                                    <a href="all-student.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                        Students</a>
                                 </li>
                                 <!-- <li class="nav-item">
-                                    <a href="parents-details.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Parents Details</a>
+                                    <a href="student-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Student Details</a>
                                 </li> -->
                                 <li class="nav-item">
-                                    <a href="school-form.html" class="nav-link menu-active"><i class="fas fa-angle-right"></i>Registration
-                                    Form </a>
+                                    <a href="admit-form.html" class="nav-link menu-active"><i
+                                            class="fas fa-angle-right"></i>Admission Form</a>
                                 </li>
+                                <!-- <li class="nav-item">
+                                    <a href="student-promotion.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Student Promotion</a>
+                                </li> -->
                             </ul>
                         </li>
                         <li class="nav-item sidebar-nav-item">
@@ -290,7 +294,10 @@
                                     <a href="all-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>All
                                         Teachers</a>
                                 </li>
-                                
+                                <!-- <li class="nav-item">
+                                    <a href="teacher-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Teacher Details</a>
+                                </li> -->
                                 <li class="nav-item">
                                     <a href="add-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
                                         Teacher</a>
@@ -305,17 +312,20 @@
                             <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Parents</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                                    <a href="all-schools.html" class="nav-link"><i class="fas fa-angle-right"></i>All
                                         Parents</a>
                                 </li>
-                               
+                                <li class="nav-item">
+                                    <a href="parents-details.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Parents Details</a>
+                                </li>
                                 <li class="nav-item">
                                     <a href="add-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
                                         Parent</a>
                                 </li>
                             </ul>
-                        <!-- </li>
-                        <li class="nav-item sidebar-nav-item">
+                        </li>
+                        <!-- <li class="nav-item sidebar-nav-item">
                             <a href="#" class="nav-link"><i class="flaticon-books"></i><span>Library</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
@@ -441,12 +451,12 @@
             <div class="dashboard-content-one">
                 <!-- Breadcubs Area Start Here -->
                 <div class="breadcrumbs-area">
-                    <h3>School</h3>
+                    <h3>Students</h3>
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li>School Registration Form</li>
+                        <li>Student Registration Form</li>
                     </ul>
                 </div>
                 <!-- Breadcubs Area End Here -->
@@ -455,7 +465,7 @@
                     <div class="card-body">
                         <div class="heading-layout1">
                             <div class="item-title">
-                                <h3>Add New Schools</h3>
+                                <h3>Add New Students</h3>
                             </div>
                             <div class="dropdown">
                                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -471,7 +481,7 @@
                                 </div>
                             </div>
                         </div>
-                        <form class="new-added-form" method="POST">
+                        <form class="new-added-form">
                             <div class="row">
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>First Name *</label>
