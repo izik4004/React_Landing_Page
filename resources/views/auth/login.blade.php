@@ -1,73 +1,115 @@
-@extends('layouts.app')
+<!doctype html>
+<html class="no-js" lang="">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AKKHOR | Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+    
+    <link rel="stylesheet" href="css/me.css">
+    <link rel="stylesheet" href="css/react.css">
+    <link rel="stylesheet" href="css/zero.css">
+    <link rel="stylesheet" href="css/style.less">
+    <!-- Modernize js -->
+    <script src="js/modernizr-3.6.0.min.js"></script>
+</head>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+<body>
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+    <!-- Login Page Start Here -->
+    <div class="login-page-wrap">
+        <div class="login-page-content">
+            <div class="login-box">
+                <div class="item-logo">
+                    <img src="img/logo4.png" alt="logo">
+                </div>
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+                {{-- <form action="index.html" class="login-form"> --}}
+                    <div class="form-group">
+                        <label>Username/Email</label>
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                    </div>
+                    <div class="form-group d-flex align-items-center justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <label for="remember-me" class="form-check-label">Remember Me</label>
                         </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
+                        @if (Route::has('password.request'))
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            {{ __('Forgot Your Password?') }}
+                        </a>
+                    @endif
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            {{ __('Login') }}
+                        </button>
+                    </div>
+                    
+                </form>
+                <div class="login-social">
+                    <p>or sign in with</p>
+                    <ul>
+                        <li><a href="#" class="bg-fb"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="bg-twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="bg-gplus"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#" class="bg-git"><i class="fab fa-github"></i></a></li>
+                    </ul>
                 </div>
             </div>
+            {{-- <div class="sign-up">Don't have an account ? <a href="#">Signup now!</a></div> --}}
         </div>
     </div>
-</div>
-@endsection
+    <!-- Login Page End Here -->
+    <!-- jquery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scroll Up Js -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Custom Js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

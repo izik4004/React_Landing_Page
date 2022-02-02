@@ -15,7 +15,7 @@ class SchoolController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -25,7 +25,7 @@ class SchoolController extends Controller
      */
     public function create()
     {
-        return view('Frontfiles.school-form');
+        return view('schools.school-form');
     }
 
     /**
@@ -51,7 +51,7 @@ class SchoolController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
