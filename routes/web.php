@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\TeachersController::class, 'index'])->name('index');
+// Route::get('/', [App\Http\Controllers\TeachersController::class, 'index'])->name('index');
 
-Route::get('/allschools', [App\Http\Controllers\TeachersController::class, 'allschools'])->name('allschools');
+// Route::get('/allschools', [App\Http\Controllers\TeachersController::class, 'allschools'])->name('allschools');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -28,10 +28,10 @@ Route::get('schools/{id}', [App\Http\Controllers\SchoolsController::class, 'show
 
 Route::resource('teachers', 'TeachersController');
 
-// Auth::routes();
+Auth::routes();
 
 
-Route::get('/form', function()
+Route::get('/', function()
 {
-    return View('school-form');
+    return View('index');
 });
