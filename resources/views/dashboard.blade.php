@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/me.css">
+    <link rel="stylesheet" href="css/react.css">
+    <link rel="stylesheet" href="css/zero.css">
+
     <!-- Modernize js -->
     <script src="js/modernizr-3.6.0.min.js"></script>
 </head>
@@ -276,7 +281,7 @@
                                             class="fas fa-angle-right"></i>Parents Details</a>
                                 </li> -->
                                 <li class="nav-item">    
-                                    <a href="{{ route('school-form') }}" class="nav-link><i class="fas fa-angle-right"></i>Registration
+                                    <a href="school-form.html" class="nav-link><i class="fas fa-angle-right"></i>Registration
                                     Form </a>
                                 </li>
                             </ul>

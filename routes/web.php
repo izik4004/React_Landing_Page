@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/allschools', [App\Http\Controllers\TeachersController::class, 'allschools'])->name('allschools');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
 
 Route::get('schools', [App\Http\Controllers\SchoolsController::class, 'index'])->name('schools');
@@ -31,8 +31,4 @@ Route::resource('students', 'StudentController');
 
 Auth::routes();
 
-
-Route::get('/', function()
-{
-    return View('index');
-});
+// Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
