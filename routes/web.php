@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', [App\Http\Controllers\TeachersController::class, 'index'])->name('index');
 
-// Route::get('/allschools', [App\Http\Controllers\TeachersController::class, 'allschools'])->name('allschools');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -37,7 +35,6 @@ Route::get('students/create', [App\Http\Controllers\StudentsController::class, '
 Route::resource('teachers', 'TeachersController');
 Route::resource('students', 'StudentController');
 Route::resource('school', 'SchoolController');
-
 
 Auth::routes();
 

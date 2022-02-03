@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Ansemiss') }}</title>
 
     <!-- Scripts -->
         <!-- Fonts -->
-    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
   
@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.less')}}">
 
     <!-- Modernize js -->
-    {{-- <script src="js/modernizr-3.6.0.min.js"></script> --}}
+    <script src="js/modernizr-3.6.0.min.js"></script>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -118,7 +118,7 @@
                                         <li><a href="#"><i class="flaticon-gear-loading"></i>Account Settings</a></li>
                                         {{-- <li><a href="{{ route('logout') }}"><i class="flaticon-turn-off"></i>Log Out</a></li> --}}
                                         <li><a href="login.html"><i class="flaticon-turn-off"></i>Log Out</a></li>
-                                        {{-- <li >
+                                        <li >
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
@@ -128,8 +128,9 @@
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                                 @csrf
                                             </form>
-                                        </li> --}}
+                                        </li>
                                     </ul>
+                                    
                                 </div>
                             </div>
                         </li>
@@ -143,7 +144,7 @@
                                 <span>5</span>
                             </a>
     
-                            <div class="dropdown-menu dropdown-menu-right">
+                            {{-- <div class="dropdown-menu dropdown-menu-right">
                                 <div class="item-header">
                                     <h6 class="item-title">05 Message</h6>
                                 </div>
@@ -253,7 +254,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> --}}
                          <li class="navbar-item dropdown header-language">
                             <a class="navbar-nav-link dropdown-toggle" href="#" role="button" 
                             data-toggle="dropdown" aria-expanded="false"><i class="fas fa-globe-americas"></i>EN</a>

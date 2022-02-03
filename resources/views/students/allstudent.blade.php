@@ -151,7 +151,7 @@
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                {{-- <tbody>
                                     <tr>
                                         <td>
                                             <div class="form-check">
@@ -1172,7 +1172,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                </tbody>
+                                </tbody> --}}
                             </table>
                         </div>
                     </div>

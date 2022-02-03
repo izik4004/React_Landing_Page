@@ -19,7 +19,7 @@
                     <h3>Admin Dashboard</h3>
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>Admin</li>
                     </ul>
@@ -38,7 +38,7 @@
                                 <div class="col-6">
                                     <div class="item-content">
                                         <div class="item-title">Students</div>
-                                        <div class="item-number"><span class="counter" data-num="150000">0</span></div>
+                                        <div class="item-number"><span class="counter" data-num="0">0</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                                 <div class="col-6">
                                     <div class="item-content">
                                         <div class="item-title">Teachers</div>
-                                        <div class="item-number"><span class="counter" data-num="2250">0</span></div>
+                                        <div class="item-number"><span class="counter" data-num="0">0</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -71,8 +71,8 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="item-content">
-                                        <div class="item-title">Parents</div>
-                                        <div class="item-number"><span class="counter" data-num="5690">0</span></div>
+                                        <div class="item-title">Schools</div>
+                                        <div class="item-number"><span class="counter" data-num="0">0</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                                 <div class="col-6">
                                     <div class="item-content">
                                         <div class="item-title">Earnings</div>
-                                        <div class="item-number"><span>$</span><span class="counter" data-num="193000">0</span></div>
+                                        <div class="item-number"><span>$</span><span class="counter" data-num="0">0</span></div>
                                     </div>
                                 </div>
                             </div>
