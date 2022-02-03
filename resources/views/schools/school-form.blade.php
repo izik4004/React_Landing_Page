@@ -152,8 +152,31 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>School Phone Number*</label>
+                                    <input type="tel" placeholder="" class="form-control" name="roll">
+                                </div>
+                                 
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>Year of Establishment*</label>
                                     <input type="text" placeholder="" class="form-control" name="roll">
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <label>Level of education offered</label>
+                                    <div>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Urban</label>
+                                </div>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Rural</label>
+                                  </div>
+                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>Level of education offered</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Urban</label>
+
+                                </div>
+
                                 {{-- <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Religion *</label>
                                     <select class="select2" name="religion" required>

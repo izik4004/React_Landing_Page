@@ -150,6 +150,7 @@
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Home Town *</label>
                                     <input type="text" placeholder="" class="form-control">
+                                </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Residential Address</label>
                                     <input type="text" placeholder="" class="form-control">
@@ -164,11 +165,11 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Next of Kin *</label>
-                                    <input type="email" placeholder="" class="form-control">
+                                    <input type="name" placeholder="" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Phone Number of Next of Kin</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="tel" placeholder="" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Highest Academic Qualiification</label>
@@ -200,7 +201,19 @@
     </div>
     <!-- jquery-->
 
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scroll Up Js -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Data Table Js -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <!-- Custom Js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/allschools', [App\Http\Controllers\TeachersController::class, 'allschools'])->name('allschools');
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::get('schools', [App\Http\Controllers\SchoolsController::class, 'index'])->name('schools.index');

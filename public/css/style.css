@@ -154,7 +154,7 @@ h6 {
   font-size: 14px;
   padding: 10px 15px;
 }
-/*=============== 2.3 Forms ==================*/
+/* =============== 2.3 Forms ================== */
 .form-group .form-control {
   height: 45px;
   background-color: #f8f8f8;
@@ -232,7 +232,7 @@ h6 {
 }
 .form-check input[type="checkbox"]:checked + label:after {
   color: #08b13c;
-}
+} 
 /*=============== 2.4 Grid ==================*/
 .col-12-xxxl,
 .col-11-xxxl,
@@ -3351,7 +3351,7 @@ ul {
 }
 /*=============== 6.6 Login Page ==================*/
 .login-page-wrap {
-  background-image: url('img/figure/login-bg.jpg');
+  
   background-repeat: no-repeat;
   background-position: top;
   position: fixed;

@@ -77,19 +77,16 @@
                             </ul>
                         </li>
                         <li class="nav-item sidebar-nav-item">
-                            <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Parents</span></a>
+                            <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Schools</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
                                    <a href="{{ route('school.index') }}" class="nav-link"><i class="fas fa-angle-right"></i>All
-                                        Parents</a>
+                                        Schools</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="parents-details.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Parents Details</a>
-                                </li>
+                                
                                 <li class="nav-item">
                                     <a href="add-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
-                                        Parent</a>
+                                        Schools</a>
                                 </li>
                             </ul>
                         </li>
