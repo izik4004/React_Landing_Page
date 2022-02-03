@@ -119,11 +119,11 @@
                             <div class="row">
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Full Name *</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="Full name" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Name of School *</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="name of school" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Gender *</label>
@@ -136,16 +136,17 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Date Of Birth *</label>
-                                    <input type="text" placeholder="dd/mm/yyyy" class="form-control air-datepicker">
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                        data-position='bottom right' name="date_of_birth" required>
                                     <i class="far fa-calendar-alt"></i>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>State of Origin</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="state of origin" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>LGA *</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="LGA" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Home Town *</label>
@@ -153,7 +154,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Residential Address</label>
-                                    <input type="text" placeholder="" class="form-control">
+                                    <input type="text" placeholder="Address" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Do you live within the school premises</label>
@@ -161,15 +162,15 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Phone Number *</label>
-                                    <input type="tel" placeholder="" class="form-control">
+                                    <input type="tel" placeholder="phone number" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Next of Kin *</label>
-                                    <input type="name" placeholder="" class="form-control">
+                                    <input type="name" placeholder="Next of kin" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Phone Number of Next of Kin</label>
-                                    <input type="tel" placeholder="" class="form-control">
+                                    <input type="tel" placeholder="phone number" class="form-control">
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-12 form-group">
                                     <label>Highest Academic Qualiification</label>
@@ -177,12 +178,86 @@
                                 </div>
                                 <div class="col-lg-6 col-12 form-group">
                                     <label>Institution attended with date</label>
-                                    <textarea class="text" ></textarea>
+                                    <input type="text" placeholder="" class="form-control">
                                 </div>
-                                <div class="col-lg-6 col-12 form-group mg-t-30">
-                                    <label class="text-dark-medium">Upload Student Photo (150px X 150px)</label>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Subject area of specialisation</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Subject(s) taught:</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>Year of first appointment *</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                    data-position='bottom right' name="date_of_birth" required>
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>Date of present appointment *</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                        data-position='bottom right' name="date_of_birth" required>
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>Date of retirement *</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                    data-position='bottom right' name="date_of_birth" required>
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label>Years of experience *</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                    data-position='bottom right' name="date_of_birth" required>
+                                     <i class="far fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Grade Level</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Rank</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Post held in school</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Year posted to school</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                        data-position='bottom right' name="date_of_birth" required>
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Posting history with date</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                    data-position='bottom right' name="date_of_birth" required>
+                                     <i class="far fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Date of retirement:</label>
+                                    <input type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker"
+                                        data-position='bottom right' name="date_of_birth" required>
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-lg-6 col-12 form-group">
+                                    <label>Type of staff *</label>
+                                    <select class="select2">
+                                        <option value="">Please Select  *</option>
+                                        <option value="1">Temporary</option>
+                                        <option value="2">PTA</option>
+                                        <option value="3">N-Power</option>
+                                        <option value="3">Others</option>
+                                    </select>
+                                </div>
+                                {{-- <div class="col-lg-6 col-12 form-group mg-t-30">
+                                    <label class="text-dark-medium">School Logo (150px X 150px)</label>
                                     <input type="file" class="form-control-file">
-                                </div>
+                                </div> --}}
                                 <div class="col-12 form-group mg-t-8">
                                     <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Save</button>
                                     <button type="reset" class="btn-fill-lg bg-blue-dark btn-hover-yellow">Reset</button>
@@ -193,7 +268,7 @@
                 </div>
                 <!-- Add New Teacher Area End Here -->
                 <footer class="footer-wrap-layout1">
-                    <div class="copyright">© Copyrights <a href="#">akkhor</a> 2019. All rights reserved. Designed by <a href="#">PsdBosS</a></div>
+                    <div class="copyright">© Copyrights <a href="#">ansemiss</a> 2020. All rights reserved. Designed by <a href="#">PsdBosS</a></div>
                 </footer>
             </div>
         </div>

@@ -159,12 +159,105 @@
                                     <label>Year of Establishment*</label>
                                     <input type="text" placeholder="" class="form-control" name="roll">
                                 </div>
+                                <div class="col-12 col-lg-12 col-12 form-group">
+                                    <div class="col-sm-12">Level of education offered</div>
+                                    <div class="col-sm-12 row">
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Junior Secondary only
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                        <label class="form-check-label" for="gridCheck2">
+                                            Senior Secondary only
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Junior and Senior Secondary
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            ECCDE
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Nursery
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label" for="gridCheck1">
+                                           Primary
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="col-12 col-lg-12 col-12 form-group">
+                                    <div class="col-sm-12">Types of school</div>
+                                    <div class="col-sm-12 row">
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Regular
+                                        </label>
+                                      </div>
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Islamiya Integrated
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                <div class="col-12 col-lg-12 col-12 form-group">
+                                    <div class="col-sm-12">Does the school operate shift system</div>
+                                    <div class="col-sm-12 row">
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Yes
+                                        </label>
+                                      </div>
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            No
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-12 col-lg-12 col-12 form-group">
+                                    <div class="col-sm-12">Does the school share facilities/teachers/premises with any other school?</div>
+                                    <div class="col-sm-12 row">
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Regular
+                                        </label>
+                                      </div>
+                                      <div class="form-check" style="display: block">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Islamiya Integrated
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
                                 <div class="form-check form-check-inline">
                                     <label>Level of education offered</label>
                                     <div>
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Urban</label>
-                                </div>
                                   </div>
                                   <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
@@ -243,8 +336,8 @@
                 </div>
                 <!-- Admit Form Area End Here -->
                 <footer class="footer-wrap-layout1">
-                    <div class="copyright">© Copyrights <a href="#">akkhor</a> 2019. All rights reserved. Designed by <a
-                            href="#">PsdBosS</a></div>
+                    <div class="copyright">© Copyrights <a href="#">ansemiss</a> 2022. All rights reserved. Designed by <a
+                            href="#">ansemiss</a></div>
                 </footer>
             </div>
         </div>
