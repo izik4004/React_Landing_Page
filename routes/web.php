@@ -17,18 +17,27 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/allschools', [App\Http\Controllers\TeachersController::class, 'allschools'])->name('allschools');
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
 
 
-Route::get('schools', [App\Http\Controllers\SchoolsController::class, 'index'])->name('schools');
+Route::get('schools', [App\Http\Controllers\SchoolsController::class, 'index'])->name('schools.index');
 
 Route::get('schools/create', [App\Http\Controllers\SchoolsController::class, 'create'])->name('schools.create');
 
 Route::get('schools/{id}', [App\Http\Controllers\SchoolsController::class, 'show'])->name('schools.show');
 
+Route::get('teachers', [App\Http\Controllers\TeachersController::class, 'index'])->name('teachers.index');
+
+Route::get('teachers/create', [App\Http\Controllers\TeachersController::class, 'create'])->name('teachers.create');
+
+Route::get('students', [App\Http\Controllers\StudentsController::class, 'index'])->name('students.index');
+
+Route::get('students/create', [App\Http\Controllers\StudentsController::class, 'create'])->name('students.create');
+
 Route::resource('teachers', 'TeachersController');
 Route::resource('students', 'StudentController');
 Route::resource('school', 'SchoolController');
+
 
 Auth::routes();
 

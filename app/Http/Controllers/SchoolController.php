@@ -18,7 +18,7 @@ class SchoolController extends Controller
      */
     public function index()
     {
-        
+        return view ('schools.allschools');
     }
 
     /**
@@ -39,7 +39,7 @@ class SchoolController extends Controller
      */
     public function show($id)
     {
-        
+        return view('schools.index');
     }
 
     /**

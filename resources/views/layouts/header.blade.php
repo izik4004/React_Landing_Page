@@ -1,43 +1,53 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ANSEMISS</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="fonts/flaticon.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!-- Select 2 CSS -->
-    <link rel="stylesheet" href="css/select2.min.css">
-    <!-- Date Picker CSS -->
-    <link rel="stylesheet" href="css/datepicker.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
 
-      <link rel="stylesheet" href="css/me.css">
-    <link rel="stylesheet" href="css/react.css">
-    <link rel="stylesheet" href="css/zero.css">
-    <link rel="stylesheet" href="css/style.less">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Ansemiss') }}</title>
+
+    <!-- Scripts -->
+        <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+  
+     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="{{ asset('css/normalize.css')}}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{{ asset('css/all.min.css')}}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{{ asset('fonts/flaticon.css')}}">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{{ asset('css/animate.min.css')}}">
+    <!-- Select 2 CSS -->
+    <link rel="stylesheet" href="{{ asset('css/select2.min.css')}}">
+    <!-- Date Picker CSS -->
+    <link rel="stylesheet" href="{{ asset('css/datepicker.min.css')}}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+
+      <link rel="stylesheet" href="{{ asset('css/me.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/react.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/zero.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/style.less')}}">
 
     <!-- Modernize js -->
     <script src="js/modernizr-3.6.0.min.js"></script>
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
 </head>
 
-<body>
     <!-- Preloader Start Here -->
     <body>
         <!-- Preloader Start Here -->
@@ -48,8 +58,8 @@
             <div class="navbar navbar-expand-md header-menu-one bg-light">
                 <div class="nav-bar-header-one">
                     <div class="header-logo">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="logo">
+                        <a href="{{ route('dashboard') }}">
+                            {{-- <img src="img/logo.png" alt="logo"> --}}
                         </a>
                     </div>
                      <div class="toggle-button sidebar-toggle">
@@ -106,7 +116,8 @@
                                         <li><a href="#"><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>Message</a></li>
                                         <li><a href="#"><i class="flaticon-gear-loading"></i>Account Settings</a></li>
                                         {{-- <li><a href="{{ route('logout') }}"><i class="flaticon-turn-off"></i>Log Out</a></li> --}}
-                                        <li >
+                                        <li><a href="login.html"><i class="flaticon-turn-off"></i>Log Out</a></li>
+                                        {{-- <li >
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
@@ -116,11 +127,13 @@
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                                 @csrf
                                             </form>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </div>
                         </li>
+
+
                         <li class="navbar-item dropdown header-message">
                             <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                 aria-expanded="false">

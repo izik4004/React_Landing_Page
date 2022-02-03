@@ -24,4 +24,6 @@ class SchoolsController extends Controller
         
         return view('schools.create');
     }
+
+
 }

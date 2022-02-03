@@ -34,7 +34,7 @@
                  <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Schools</span></a>
                  <ul class="nav sub-group-menu">
                      <li class="nav-item">
-                         <a href="all-schools.html" class="nav-link"><i class="fas fa-angle-right"></i>All
+                        <a href="{{ route('school.index') }}" class="nav-link"><i class="fas fa-angle-right"></i>All
                              School</a>
                      </li>
                      <!-- <li class="nav-item">
@@ -42,7 +42,7 @@
                                  class="fas fa-angle-right"></i>Parents Details</a>
                      </li> -->
                      <li class="nav-item">
-                         <a href="school-form.html" class="nav-link"><i class="fas fa-angle-right"></i>Registration
+                        <a href="{{ route('school.create') }}" class="nav-link"><i class="fas fa-angle-right"></i>Registration
                          Form </a>
                      </li>
                  </ul>

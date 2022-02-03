@@ -20,7 +20,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
+        return view('student.allstudent');
     }
 
     /**
@@ -30,7 +30,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('student.studentform');
+        return view('students.studentform');
     }
 
     /**
