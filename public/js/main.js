@@ -135,10 +135,12 @@
       -------------------------------------*/
     var counterContainer = $(".counter");
     if (counterContainer.length) {
-      counterContainer.counterUp({
-        delay: 50,
-        time: 1000
-      });
+      if ( typeof counterContainer.counterUp == 'function' ) {
+        counterContainer.counterUp({
+          delay: 50,
+          time: 1000
+        });
+      }
     }
 
     /*-------------------------------------

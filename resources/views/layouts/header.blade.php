@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{ asset('css/all.min.css')}}">
     <!-- Flaticon CSS -->
     <link rel="stylesheet" href="{{ asset('fonts/flaticon.css')}}">
+    <!-- Full Calender CSS -->
+    <link rel="stylesheet" href="{{ asset('css/fullcalendar.min.css') }}">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="{{ asset('css/animate.min.css')}}">
     <!-- Select 2 CSS -->
@@ -35,16 +37,17 @@
     <link rel="stylesheet" href="{{ asset('css/datepicker.min.css')}}">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/style2.css')}}">
 
-      <link rel="stylesheet" href="{{ asset('css/me.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/me.css')}}">
     <link rel="stylesheet" href="{{ asset('css/react.css')}}">
     <link rel="stylesheet" href="{{ asset('css/zero.css')}}">
     <link rel="stylesheet" href="{{ asset('css/style.less')}}">
 
     <!-- Modernize js -->
-    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="{{ asset('js/modernizr-3.6.0.min.js') }}"></script>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
 </head>
 
@@ -266,11 +269,11 @@
                     </ul>
                 </div>
             </div>
-    </div>
+        {{-- </div> --}}
 
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    {{-- <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Plugins js -->
     <script src="js/plugins.js"></script>
     <!-- Popper js -->
@@ -286,5 +289,4 @@
     <!-- Custom Js -->
     <script src="js/main.js"></script>
 </body>
-</html>
-        
+</html> --}}
